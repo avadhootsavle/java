@@ -1,7 +1,7 @@
 # java (college)
-all java programs done in college
+#all java programs done in college
 
 
 
 
-****Thank You
+#Thank You
