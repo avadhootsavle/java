@@ -1,5 +1,6 @@
 import java.awt.*;
-class Login extends Frame
+import java.awt.event.*;
+class Login extends Frame implements ActionListener
 {
 	TextField tf1,tf2;
 	Label lbl,lbl2;
@@ -23,7 +24,20 @@ class Login extends Frame
 		btn2=new Button("Clear");
 		this.add(btn2);
 		this.setVisible(true);
-		
+		btn1.addActionListener(this);
+		btn2.addActionListener(this);
+	}
+	public void actionPerformed(ActionEvent ae){
+		String un="aas",ps="aas";
+		String i1 = tf1.getText();
+		String i2 = tf2.getText();
+
+		if(un.equals(i1)&& ps.equals(i2)){
+			System.out.println("Login Success ");
+		}
+		else{
+			System.out.println("un Success");
+		}
 	}
 	public static void main(String[] args) {
 		Login f=new Login("Login Form");
